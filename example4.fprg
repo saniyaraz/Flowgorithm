@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="example4"/>
+        <attribute name="authors" value="cert"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-01 01:58:20 AM"/>
+        <attribute name="created" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMi0wMTswMTo1MzoxNyBBTTsyNzQy"/>
+        <attribute name="edited" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMi0wMTswMTo1ODoyMCBBTTsxOzI4NDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;please input a number:&quot;" newline="True"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <declare name="res" type="Real" array="False" size=""/>
+            <assign variable="res" expression="a%2"/>
+            <if expression="res=0">
+                <then>
+                    <output expression="&quot;number is even&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;number is odd&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

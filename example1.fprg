@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="example1"/>
+        <attribute name="authors" value="cert"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-01 12:53:01 AM"/>
+        <attribute name="created" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMS0zMDsxMToxMjoyMiBQTTsyNzUw"/>
+        <attribute name="edited" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMi0wMTsxMjo1MzowMSBBTTsxOzI4NDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;plese enter the number&quot;" newline="True"/>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <assign variable="y" expression="x*x"/>
+            <output expression="&quot;the power of number is : &quot;&amp; y" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

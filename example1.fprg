@@ -4,18 +4,36 @@
         <attribute name="name" value="example1"/>
         <attribute name="authors" value="cert"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-12-01 12:53:01 AM"/>
-        <attribute name="created" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMS0zMDsxMToxMjoyMiBQTTsyNzUw"/>
-        <attribute name="edited" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMi0wMTsxMjo1MzowMSBBTTsxOzI4NDU="/>
+        <attribute name="saved" value="2025-12-04 11:59:27 PM"/>
+        <attribute name="created" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMi0wNDsxMToyNzo1OCBQTTsyNzY3"/>
+        <attribute name="edited" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMi0wNDsxMTo1OToyNyBQTTsxOzI4NzY="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <output expression="&quot;plese enter the number&quot;" newline="True"/>
-            <declare name="x, y" type="Integer" array="False" size=""/>
-            <input variable="x"/>
-            <assign variable="y" expression="x*x"/>
-            <output expression="&quot;the power of number is : &quot;&amp; y" newline="True"/>
+            <declare name="temp1, temp2, temp3, i" type="Real" array="False" size=""/>
+            <comment text="&#1606;&#1608;&#1588;&#1578;&#1606; &#1576;&#1585;&#1606;&#1575;&#1605;&#1607; &#1575;&#1740; &#1705;&#1607; 100 &#1593;&#1583;&#1583; &#1605;&#1740;&#1711;&#1740;&#1585;&#1583; &#1608; &#1583;&#1608;&#1605;&#1740;&#1606; &#1593;&#1583;&#1583; &#1576;&#1586;&#1585;&#1711;&#1578;&#1585; &#1585;&#1575; &#1606;&#1605;&#1575;&#1740;&#1588; &#1605;&#1740; &#1583;&#1607;&#1583; .&#1575;&#1593;&#1583;&#1575;&#1583; &#1605;&#1579;&#1576;&#1578; &#1601;&#1585;&#1590; &#1588;&#1608;&#1606;&#1583;"/>
+            <assign variable="temp1" expression="0"/>
+            <assign variable="temp2" expression="0"/>
+            <for variable="i" start="1" end="5" direction="inc" step="1">
+                <output expression="&quot;please enter a number&quot;" newline="True"/>
+                <input variable="temp3"/>
+                <if expression="temp2&lt;temp3">
+                    <then>
+                        <if expression="temp3&gt;temp1">
+                            <then>
+                                <assign variable="temp2" expression="temp1"/>
+                                <assign variable="temp1" expression="temp3"/>
+                            </then>
+                            <else>
+                                <assign variable="temp2" expression="temp3"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;second biggest number is:&quot;&amp;temp2" newline="True"/>
         </body>
     </function>
 </flowgorithm>

@@ -4,26 +4,29 @@
         <attribute name="name" value="example4"/>
         <attribute name="authors" value="cert"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-12-01 01:58:20 AM"/>
-        <attribute name="created" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMi0wMTswMTo1MzoxNyBBTTsyNzQy"/>
-        <attribute name="edited" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMi0wMTswMTo1ODoyMCBBTTsxOzI4NDk="/>
+        <attribute name="saved" value="2025-12-05 01:41:06 AM"/>
+        <attribute name="created" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMi0wNTsxMjo0NDozMCBBTTsyNzQz"/>
+        <attribute name="edited" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMi0wNTswMTo0MTowNiBBTTsxOzI4NDk="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <output expression="&quot;please input a number:&quot;" newline="True"/>
-            <declare name="a" type="Integer" array="False" size=""/>
-            <input variable="a"/>
-            <declare name="res" type="Real" array="False" size=""/>
-            <assign variable="res" expression="a%2"/>
-            <if expression="res=0">
-                <then>
-                    <output expression="&quot;number is even&quot;" newline="True"/>
-                </then>
-                <else>
-                    <output expression="&quot;number is odd&quot;" newline="True"/>
-                </else>
-            </if>
+            <comment text="&#1578;&#1576;&#1583;&#1740;&#1604; &#1605;&#1576;&#1606;&#1575; &#1575;&#1586; 10 &#1576;&#1607; &#1605;&#1576;&#1606;&#1575; &#1583;&#1740;&#1711;&#1585;&#13;&#10;&#1605;&#1579;&#1604;&#1575; &#1605;&#1576;&#1606;&#1575;2"/>
+            <output expression="&quot;adad ra vared konid:&quot;" newline="True"/>
+            <declare name="number, baghimandeh, res, i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="res" expression="0"/>
+            <input variable="number"/>
+            <output expression="&quot;mabna ra vared konid&quot;" newline="True"/>
+            <declare name="mabna" type="Integer" array="False" size=""/>
+            <input variable="mabna"/>
+            <while expression="number&gt;0">
+                <assign variable="baghimandeh" expression="number%mabna"/>
+                <assign variable="number" expression="number/mabna"/>
+                <assign variable="res" expression="res+(baghimandeh*i)"/>
+                <assign variable="i" expression="i*10"/>
+            </while>
+            <output expression="res" newline="True"/>
         </body>
     </function>
 </flowgorithm>

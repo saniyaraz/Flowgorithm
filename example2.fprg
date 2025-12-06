@@ -4,19 +4,39 @@
         <attribute name="name" value="example2"/>
         <attribute name="authors" value="cert"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-12-01 01:33:40 AM"/>
-        <attribute name="created" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMi0wMTsxMjo1MzoyOCBBTTsyNzQ2"/>
-        <attribute name="edited" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMi0wMTswMTozMzo0MCBBTTsxOzI4NDQ="/>
+        <attribute name="saved" value="2025-12-05 12:19:47 AM"/>
+        <attribute name="created" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMi0wNDsxMTo1OTozMCBQTTsyNzYy"/>
+        <attribute name="edited" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMi0wNTsxMjoxOTo0NyBBTTsxOzI4NjE="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <output expression="&quot;plese enter radius:&quot;" newline="True"/>
-            <declare name="r, s, p" type="Real" array="False" size=""/>
-            <input variable="r"/>
-            <assign variable="S" expression="3.14*r*r"/>
-            <assign variable="p" expression="2*3.14*r"/>
-            <output expression="&quot;masahat is :&quot; &amp; s&amp;&#13;&#10;&quot;mohit is:&quot;&amp;p" newline="True"/>
+            <comment text="&#1581;&#1587;&#1575;&#1576; &#1705;&#1585;&#1583;&#1606; &#1580;&#1605;&#1604;&#1607; &#1575;&#1606; &#1575;&#1605; &#1587;&#1585;&#1740; &#1586;&#1740;&#1585;:&#13;&#10;1,5,3,4,3.5,...."/>
+            <output expression="&quot;please enter a number:&quot;" newline="True"/>
+            <declare name="number, a, b, temp, i" type="Real" array="False" size=""/>
+            <assign variable="a" expression="1"/>
+            <assign variable="b" expression="5"/>
+            <input variable="number"/>
+            <if expression="number=1">
+                <then>
+                    <output expression="&quot;number is:&quot;&amp;a" newline="True"/>
+                </then>
+                <else>
+                    <if expression="number=2">
+                        <then>
+                            <output expression="&quot;number is:&quot;&amp;b" newline="True"/>
+                        </then>
+                        <else>
+                            <for variable="i" start="3" end="number" direction="inc" step="1">
+                                <assign variable="temp" expression="(a+b)/2"/>
+                                <assign variable="a" expression="b"/>
+                                <assign variable="b" expression="temp"/>
+                            </for>
+                            <output expression="&quot;number is :&quot;&amp;temp" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
         </body>
     </function>
 </flowgorithm>

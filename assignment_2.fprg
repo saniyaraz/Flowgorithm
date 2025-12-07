@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="assignment_2"/>
+        <attribute name="authors" value="cert"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-07 12:21:46 AM"/>
+        <attribute name="created" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMi0wNzsxMjoxMTo0OCBBTTsyNzQ4"/>
+        <attribute name="edited" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMi0wNzsxMjoyMTo0NiBBTTsxOzI4NTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="flag, maxnum, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;please enter flag:&quot;" newline="True"/>
+            <input variable="flag"/>
+            <output expression="&quot;please enter maxnum:&quot;" newline="True"/>
+            <input variable="maxnum"/>
+            <if expression="flag&gt;14">
+                <then>
+                    <for variable="i" start="1" end="maxnum" direction="inc" step="1">
+                        <if expression="(i%2)==1">
+                            <then>
+                                <output expression="&quot;printing odd numbers between 1 to maxnum:&quot;&amp;i" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                </then>
+                <else>
+                    <for variable="i" start="maxnum" end="1" direction="dec" step="1">
+                        <if expression="(i%2)==0">
+                            <then>
+                                <output expression="&quot;printing even number in reverse between maxnum and 1:&quot;&amp;i" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="quiz1"/>
+        <attribute name="authors" value="cert"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-07 10:46:53 AM"/>
+        <attribute name="created" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMi0wNzsxMDo0MzoxMiBBTTsyNzQy"/>
+        <attribute name="edited" value="Y2VydDtERVNLVE9QLVQxVkdTMDE7MjAyNS0xMi0wNzsxMDo0Njo1MyBBTTsxOzI4NTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;please enter raw:&quot;" newline="True"/>
+            <declare name="raw" type="Integer" array="False" size=""/>
+            <input variable="raw"/>
+            <output expression="&quot;please enter cal:&quot;" newline="True"/>
+            <declare name="cal" type="Integer" array="False" size=""/>
+            <input variable="cal"/>
+            <declare name="i, j" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="raw" direction="inc" step="1">
+                <for variable="j" start="1" end="cal" direction="inc" step="1">
+                    <output expression="&quot;*&quot;" newline="False"/>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
